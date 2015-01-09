@@ -1,0 +1,72 @@
+doctype html
+html lang="ja"
+  head
+    meta charset="UTF-8"
+    title PengNote
+    meta name="keywords" content=""
+    meta name="description" content=""
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    link rel="stylesheet" href="css/style.css"
+    /![if lt IE 9]
+      script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"
+      script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"
+    /![endif]
+  body
+    header.l-global-header
+      h1.logo
+        a href="/"
+          img src="" alt="PengNote"/
+      p ココにブログの説明
+      nav.l-global-nav
+        ul
+          - 7.times {
+          li
+            a href="#" ナビゲーション
+          -}
+    main.contents
+      - 2.times {
+      article
+        img src="" alt="アイキャッチ" class="eyecatch"/
+        div.entry-content
+          h2.entry-title 
+            a href="#" エントリータイトル
+          p.postedtime
+            time pubdate="pubdate" datetime="2015-01-09" 2015-01-09
+          p.category
+            a href="#" カテゴリー
+          p.tag
+            a href="#" タグ
+      -}
+      nav.pagenation
+        ol
+          - 1.upto(5){|num|
+          li
+            a href="#" #{num}
+          - }
+    footer.l-global-footer
+      div.footer-contents
+        div.popular_post
+          h2 Popular Posts
+          ol
+            - 3.times {
+            li
+              img src="" alt="アイキャッチ"/
+              a href="#" エントリータイトル
+            - }
+        div.category-lists
+          h2 Category
+          ul
+            - 1.upto(7) {|num|
+            li
+              a href="#" カテゴリー#{num}
+            - }
+        div.author
+          h2 Author
+          img src="" alt="Authorの画像"/
+          p 
+            | 大阪在住の大学生くうすけです。
+            | チョコと布団とWordPressが好き。
+            | Webデザイン・コーディングの勉強中です。
+            a href="#" 詳しくはこちら
+      p.copy
+        small &copy; 2015 PengNote
