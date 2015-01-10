@@ -11,6 +11,12 @@ img {
   list-style-type: none;
 }
 
+.l-global-nav {
+  ul {
+    @include reset-list;
+  }
+}
+
 .entry-data {
   ul {
     @include reset-list;

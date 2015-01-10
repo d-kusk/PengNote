@@ -460,6 +460,12 @@ img {
   height: auto;
 }
 
+.l-global-nav ul {
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+  list-style-type: none;
+}
+
 .entry-data ul {
   -webkit-padding-start: 0;
   -moz-padding-start: 0;
