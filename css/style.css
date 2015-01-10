@@ -425,4 +425,12 @@ p {
   margin: 0;
 }
 
+.l-contents {
+  padding: 0 1em;
+}
+
+.l-global-footer {
+  padding: 0 1em;
+}
+
 /*# sourceMappingURL=style.css.map */
