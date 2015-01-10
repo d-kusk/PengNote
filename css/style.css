@@ -414,4 +414,15 @@ p {
   line-height: 1.8em;
 }
 
+.l-logo_area {
+  text-align: center;
+}
+.l-logo_area .logo {
+  margin-bottom: 0;
+  -webkit-margin-after: 0;
+}
+.l-logo_area p {
+  margin: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
