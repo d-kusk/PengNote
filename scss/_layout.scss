@@ -12,6 +12,20 @@
   padding: 0 1em;
 }
 
+.entry-data {
+  @include clearfix;
+  
+  .postedtime {
+    float: right;
+  }
+
+  ul {
+    float: left;
+
+    li {float: left;}
+  }
+}
+
 .l-global-footer {
   padding: 0 1em;
 }

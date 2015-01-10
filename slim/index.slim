@@ -28,15 +28,19 @@ html lang="ja"
       - 2.times {
       article.entry-area
         img src="images/thumbnail.png" width="250" height="155" alt="アイキャッチ" class="eyecatch"/
-        div.entry-content
+        .entry-content
           h2.entry-title 
             a href="#" エントリータイトル
-          p.postedtime
-            time pubdate="pubdate" datetime="2015-01-09" 2015-01-09
-          p.category
-            a href="#" カテゴリー
-          p.tag
-            a href="#" タグ
+          .entry-data
+            p.postedtime
+              time pubdate="pubdate" datetime="2015-01-09" 2015-01-09
+            ul
+              li.category
+                a href="#" カテゴリー
+              li.tag
+                - 2.times {
+                a href="#" タグ
+                - }
       -}
       nav.pagenation
         ol
