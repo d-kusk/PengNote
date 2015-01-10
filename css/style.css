@@ -414,6 +414,10 @@ p {
   line-height: 1.8em;
 }
 
+.l-global-header {
+  padding: 0 1em;
+}
+
 .l-logo-area {
   text-align: center;
 }
