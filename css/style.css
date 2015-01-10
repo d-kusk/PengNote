@@ -482,4 +482,30 @@ img {
   padding: 2px 3px;
 }
 
+.popular-post ol {
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+  list-style-type: none;
+}
+.popular-post ol li {
+  margin-bottom: .6em;
+  border-bottom: 1px dotted #ededed;
+}
+.popular-post ol li:last-of-type {
+  border-bottom: none;
+}
+
+.category-lists ul {
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+  list-style-type: none;
+}
+.category-lists ul li {
+  margin-bottom: .6em;
+  border-bottom: 1px dotted #ededed;
+}
+.category-lists ul li:last-of-type {
+  border-bottom: none;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -4,11 +4,16 @@ img {
   height: auto;
 }
 
+// リストをリセットするスタイル
+@mixin reset-list {
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+  list-style-type: none;
+}
+
 .entry-data {
   ul {
-    -webkit-padding-start: 0;
-    -moz-padding-start: 0;
-    list-style-type: none;
+    @include reset-list;
   }
 }
 
@@ -26,5 +31,35 @@ img {
   a {
     color: #fff;
     padding: 2px 3px;
+  }
+}
+
+.popular-post {
+  ol {
+    @include reset-list;
+
+    li {
+      margin-bottom: .6em;
+      border-bottom: 1px dotted #ededed;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
+  }
+}
+
+.category-lists {
+  ul {
+    @include reset-list;
+
+    li {
+      margin-bottom: .6em;
+      border-bottom: 1px dotted #ededed;
+
+      &:last-of-type {
+        border-bottom: none;
+      }
+    }
   }
 }
