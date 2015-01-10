@@ -10,3 +10,14 @@ img {
     list-style-type: none;
   }
 }
+
+.category {
+  margin-right: .6em;
+  border-radius: 7px;
+  background: $themeCo;
+
+  a {
+    color: #fff;
+    padding: 2px 3px;
+  }
+}

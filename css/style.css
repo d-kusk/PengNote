@@ -457,4 +457,14 @@ img {
   list-style-type: none;
 }
 
+.category {
+  margin-right: .6em;
+  border-radius: 7px;
+  background: #29abe2;
+}
+.category a {
+  color: #fff;
+  padding: 2px 3px;
+}
+
 /*# sourceMappingURL=style.css.map */
