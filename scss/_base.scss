@@ -1,0 +1,30 @@
+// サイト全体で要素そのもののデフォルトスタイル
+
+// Normalize.scss
+@import "_normalize";
+
+// #################
+// BaseになるCSS
+// #################
+
+// 各色などの変数
+$themeCo: #29abe2;
+
+
+body {
+  font-family: "游ゴシック", YuGothic,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;
+  background-color: #fdfdfd;
+  font-size: 15px;
+  color: #262626;
+}
+
+a {
+  text-decoration: none;
+  color: $themeCo;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+p {line-height: 1.8em;}
