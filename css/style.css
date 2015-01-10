@@ -454,7 +454,14 @@ img {
 
 .entry-data ul {
   -webkit-padding-start: 0;
+  -moz-padding-start: 0;
   list-style-type: none;
+}
+
+.entry-title {
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  margin: 0;
 }
 
 .category {
