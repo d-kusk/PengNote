@@ -414,14 +414,14 @@ p {
   line-height: 1.8em;
 }
 
-.l-logo_area {
+.l-logo-area {
   text-align: center;
 }
-.l-logo_area .logo {
+.l-logo-area .logo {
   margin-bottom: 0;
   -webkit-margin-after: 0;
 }
-.l-logo_area p {
+.l-logo-area p {
   margin: 0;
 }
 
