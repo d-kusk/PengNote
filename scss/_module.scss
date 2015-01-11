@@ -40,6 +40,19 @@ img {
   }
 }
 
+// アーカイブのページャー
+.page-numbers {
+  color: $themeCo;
+  border: 1px solid $themeCo;
+  padding: 5px;
+  margin: 0 6px;
+}
+
+.current {
+  background-color: $themeCo;
+  color: #fff;
+}
+
 .popular-post {
   ol {
     @include reset-list;

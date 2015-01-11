@@ -42,12 +42,14 @@ html lang="ja"
                 a href="#" タグ
                 - }
       -}
-      nav.pagenation
-        ol
-          - 1.upto(5){|num|
-          li
-            a href="#" #{num}
-          - }
+      div.l-archives-pager
+        span.page-numbers.current 1
+        - 2.upto(5){|num|
+        a.page-numbers href="http://peng-note.com/page/2" #{num}
+        - }
+        span.page-numbers.dots …
+        a.page-numbers href="http://peng-note.com/page/17" 17
+        a.next.page-numbers href="http://peng-note.com/page/2" » 
     footer.l-global-footer
       div.footer-contents
         div.popular-post

@@ -455,6 +455,11 @@ p {
   float: left;
 }
 
+.l-archives-pager {
+  margin: 15px 0;
+  text-align: center;
+}
+
 .l-global-footer {
   padding: 0 1em;
 }
@@ -490,6 +495,18 @@ img {
 .category a {
   color: #fff;
   padding: 2px 3px;
+}
+
+.page-numbers {
+  color: #29abe2;
+  border: 1px solid #29abe2;
+  padding: 5px;
+  margin: 0 6px;
+}
+
+.current {
+  background-color: #29abe2;
+  color: #fff;
 }
 
 .popular-post ol {
