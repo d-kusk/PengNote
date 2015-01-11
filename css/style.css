@@ -524,11 +524,20 @@ img {
   list-style-type: none;
 }
 .popular-post ol li {
+  display: table;
   margin-bottom: .6em;
   border-bottom: 1px dotted #ededed;
 }
 .popular-post ol li:last-of-type {
   border-bottom: none;
+}
+.popular-post ol li img,
+.popular-post ol li a {
+  display: table-cell;
+}
+.popular-post ol li a {
+  padding-left: .6em;
+  vertical-align: middle;
 }
 
 .category-lists h2 {
