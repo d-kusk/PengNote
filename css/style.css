@@ -515,6 +515,9 @@ img {
   color: #fff;
 }
 
+.popular-post h2 {
+  border-bottom: 3px solid #29abe2;
+}
 .popular-post ol {
   -webkit-padding-start: 0;
   -moz-padding-start: 0;
@@ -528,6 +531,9 @@ img {
   border-bottom: none;
 }
 
+.category-lists h2 {
+  border-bottom: 3px solid #29abe2;
+}
 .category-lists ul {
   -webkit-padding-start: 0;
   -moz-padding-start: 0;
@@ -539,6 +545,10 @@ img {
 }
 .category-lists ul li:last-of-type {
   border-bottom: none;
+}
+
+.author h2 {
+  border-bottom: 2px solid #29abe2;
 }
 
 /*# sourceMappingURL=style.css.map */

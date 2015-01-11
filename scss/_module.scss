@@ -60,6 +60,10 @@ img {
 }
 
 .popular-post {
+  h2 {
+    border-bottom: 3px solid $themeCo;
+  }
+
   ol {
     @include reset-list;
 
@@ -75,6 +79,10 @@ img {
 }
 
 .category-lists {
+  h2 {
+    border-bottom: 3px solid $themeCo;
+  }
+
   ul {
     @include reset-list;
 
@@ -86,5 +94,11 @@ img {
         border-bottom: none;
       }
     }
+  }
+}
+
+.author {
+  h2 {
+    border-bottom: 2px solid $themeCo;
   }
 }
