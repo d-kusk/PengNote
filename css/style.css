@@ -424,6 +424,9 @@ img {
   -moz-padding-start: 0;
   list-style-type: none;
 }
+.l-global-nav ul li a {
+  font-size: .9rem;
+}
 
 .postedtime {
   margin: 0;

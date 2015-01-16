@@ -19,6 +19,10 @@ img {
 .l-global-nav {
   ul {
     @include reset-list;
+
+    li {
+      a {font-size: .9rem;}
+    }
   }
 }
 
