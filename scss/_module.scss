@@ -11,6 +11,11 @@ img {
   list-style-type: none;
 }
 
+@mixin center {
+  width: 768px;
+  margin: 0 auto;
+}
+
 .l-global-nav {
   ul {
     @include reset-list;
