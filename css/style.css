@@ -519,6 +519,7 @@ img {
 
 .l-global-header {
   padding: 0 1em;
+  margin-bottom: 40px;
 }
 
 .l-logo-area {
@@ -552,6 +553,9 @@ img {
 .l-entry-area {
   padding: 30px 0 15px;
   border-bottom: 1px solid #ededed;
+}
+.l-entry-area:first-of-type {
+  padding-top: 0;
 }
 .l-entry-area:last-of-type {
   border-bottom: none;
