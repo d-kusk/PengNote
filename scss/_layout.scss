@@ -59,3 +59,35 @@
 .l-footer-contents {
   padding: 0 1em;
 }
+
+@media screen and (min-width:768px) {
+  .l-footer-contents {
+    @include center;
+    margin-bottom: 30px;
+  }
+
+  .l-popular-posts {
+    width: 55%;
+    float: right;
+    margin-left: 5%;
+  }
+
+  .l-category-lists {
+    width: 40%;
+    float: right;
+  }
+
+  .l-author-contents {
+    @include clearfix;
+
+    img {
+      width: 10%;
+      float: left;
+    }
+    p {
+      width: 85%;
+      margin-left: 5%;
+      float: left;
+    }
+  }
+}

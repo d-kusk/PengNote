@@ -472,48 +472,48 @@ img {
   color: #fff;
 }
 
-.popular-post h2 {
+.l-popular-posts h2 {
   border-bottom: 3px solid #29abe2;
 }
-.popular-post ol {
+.l-popular-posts ol {
   -webkit-padding-start: 0;
   -moz-padding-start: 0;
   list-style-type: none;
 }
-.popular-post ol li {
+.l-popular-posts ol li {
   display: table;
   margin-bottom: .6em;
   border-bottom: 1px dotted #ededed;
 }
-.popular-post ol li:last-of-type {
+.l-popular-posts ol li:last-of-type {
   border-bottom: none;
 }
-.popular-post ol li img,
-.popular-post ol li a {
+.l-popular-posts ol li img,
+.l-popular-posts ol li a {
   display: table-cell;
 }
-.popular-post ol li a {
+.l-popular-posts ol li a {
   padding-left: .6em;
   vertical-align: middle;
 }
 
-.category-lists h2 {
+.l-category-lists h2 {
   border-bottom: 3px solid #29abe2;
 }
-.category-lists ul {
+.l-category-lists ul {
   -webkit-padding-start: 0;
   -moz-padding-start: 0;
   list-style-type: none;
 }
-.category-lists ul li {
+.l-category-lists ul li {
   margin-bottom: .6em;
   border-bottom: 1px dotted #ededed;
 }
-.category-lists ul li:last-of-type {
+.l-category-lists ul li:last-of-type {
   border-bottom: none;
 }
 
-.author h2 {
+.l-author h2 {
   border-bottom: 2px solid #29abe2;
 }
 
@@ -583,6 +583,38 @@ img {
   padding: 0 1em;
 }
 
+@media screen and (min-width: 768px) {
+  .l-footer-contents {
+    width: 768px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+  }
+
+  .l-popular-posts {
+    width: 55%;
+    float: right;
+    margin-left: 5%;
+  }
+
+  .l-category-lists {
+    width: 40%;
+    float: right;
+  }
+
+  .l-author-contents {
+    overflow: hidden;
+    *zoom: 1;
+  }
+  .l-author-contents img {
+    width: 10%;
+    float: left;
+  }
+  .l-author-contents p {
+    width: 85%;
+    margin-left: 5%;
+    float: left;
+  }
+}
 /* 
  * Naver v3.1.2 - 2014-11-25 
  * A jQuery plugin for responsive navigation. Part of the Formstone Library. 

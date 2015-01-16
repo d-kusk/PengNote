@@ -51,7 +51,7 @@ html lang="ja"
         a.next.page-numbers href="http://peng-note.com/page/2" » 
     footer.l-global-footer
       div.l-footer-contents
-        div.popular-post
+        div.l-popular-posts
           h2 Popular Posts
           ol
             - 3.times {
@@ -59,21 +59,22 @@ html lang="ja"
               img src="images/thumbnail.png" width="70" height="70" alt="アイキャッチ"/
               a href="#" エントリータイトル
             - }
-        div.category-lists
+        div.l-category-lists
           h2 Category
           ul
             - 1.upto(7) {|num|
             li
               a href="#" カテゴリー#{num}
             - }
-        div.author
+        div.l-author
           h2 Author
-          img src="images/profile_icon.gif" width="100" height="100" alt="Authorの画像"/
-          p 
-            | 大阪在住の大学生くうすけです。
-            | チョコと布団とWordPressが好き。
-            | Webデザイン・コーディングの勉強中です。
-            a href="#" 詳しくはこちら
+          div.l-author-contents
+            img src="images/profile_icon.gif" width="100" height="100" alt="Authorの画像"/
+            p 
+              | 大阪在住の大学生くうすけです。
+              | チョコと布団とWordPressが好き。
+              | Webデザイン・コーディングの勉強中です。
+              a href="#" 詳しくはこちら
       p.copy
         small &copy; 2015 PengNote
     script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
