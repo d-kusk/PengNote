@@ -442,6 +442,23 @@ p {
   border-bottom: none;
 }
 
+@media screen and (min-width: 768px) {
+  .l-entry-area {
+    overflow: hidden;
+    *zoom: 1;
+  }
+
+  .eyecatch {
+    width: 30%;
+    float: left;
+  }
+
+  .entry-content {
+    width: 67%;
+    padding-left: 3%;
+    float: left;
+  }
+}
 .l-archives-pager {
   margin: 15px 0;
   text-align: center;
