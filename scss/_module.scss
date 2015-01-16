@@ -17,16 +17,21 @@ img {
   }
 }
 
-.entry-data {
-  ul {
-    @include reset-list;
-  }
+.postedtime {
+  margin: 0;
 }
 
 .entry-title {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   margin: 0;
+}
+
+.entry-data-lists {
+  @include clearfix;
+  @include reset-list;
+
+  li {float: left;}
 }
 
 .category {

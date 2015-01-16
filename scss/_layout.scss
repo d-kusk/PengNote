@@ -26,20 +26,6 @@
   }
 }
 
-.entry-data {
-  @include clearfix;
-
-  .postedtime {
-    float: right;
-  }
-
-  ul {
-    float: left;
-
-    li {float: left;}
-  }
-}
-
 .l-archives-pager {
   margin: 15px 0;
   text-align: center;

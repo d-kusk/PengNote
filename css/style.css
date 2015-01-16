@@ -442,20 +442,6 @@ p {
   border-bottom: none;
 }
 
-.entry-data {
-  overflow: hidden;
-  *zoom: 1;
-}
-.entry-data .postedtime {
-  float: right;
-}
-.entry-data ul {
-  float: left;
-}
-.entry-data ul li {
-  float: left;
-}
-
 .l-archives-pager {
   margin: 15px 0;
   text-align: center;
@@ -476,16 +462,25 @@ img {
   list-style-type: none;
 }
 
-.entry-data ul {
-  -webkit-padding-start: 0;
-  -moz-padding-start: 0;
-  list-style-type: none;
+.postedtime {
+  margin: 0;
 }
 
 .entry-title {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
   margin: 0;
+}
+
+.entry-data-lists {
+  overflow: hidden;
+  *zoom: 1;
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+  list-style-type: none;
+}
+.entry-data-lists li {
+  float: left;
 }
 
 .category {
