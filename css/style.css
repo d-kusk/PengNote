@@ -428,6 +428,12 @@ img {
   font-size: .9rem;
 }
 
+.archive-title {
+  margin-bottom: 30px;
+  border-bottom: 2px solid #29abe2;
+  font-size: 1.5em;
+}
+
 .postedtime {
   margin: 0;
 }

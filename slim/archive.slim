@@ -1,0 +1,83 @@
+doctype html
+html lang="ja"
+  head
+    meta charset="UTF-8"
+    title PengNote
+    meta name="keywords" content=""
+    meta name="description" content=""
+    meta name="viewport" content="width=device-width, initial-scale=1.0"
+    link rel="stylesheet" href="css/style.css"
+    /![if lt IE 9]
+      script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"
+      script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"
+    /![endif]
+  body
+    header.l-global-header
+      .l-logo-area
+        h1.logo
+          a href="/"
+            img src="images/logo.png" width="238" height="55" alt="PengNote"/
+        p 勉強した事や行った場所の感想を書くブログ
+      nav.l-global-nav
+        ul
+          - 7.times {
+          li
+            a href="#" ナビゲーション
+          -}
+    main.l-contents
+      h1.archive-title ◯◯の記事一覧
+      - 2.times {
+      article.l-entry-area
+        img src="images/thumbnail.png" width="250" height="155" alt="アイキャッチ" class="eyecatch"/
+        .entry-content
+          p.postedtime
+            time pubdate="pubdate" datetime="2015-01-09" 2015-01-09
+          h2.entry-title 
+            a href="#" エントリータイトル
+          ul.entry-data-lists
+            li.category
+              a href="#" カテゴリー
+            li.tag
+              - 2.times {
+              a href="#" タグ
+              - }
+      -}
+      nav.l-archives-pager
+        span.page-numbers.current 1
+        - 2.upto(5){|num|
+        a.page-numbers href="http://peng-note.com/page/2" #{num}
+        - }
+        span.page-numbers.dots …
+        a.page-numbers href="http://peng-note.com/page/17" 17
+        a.next.page-numbers href="http://peng-note.com/page/2" » 
+    footer.l-global-footer
+      div.l-footer-contents
+        div.l-popular-posts
+          h2 Popular Posts
+          ol
+            - 3.times {
+            li
+              img src="images/thumbnail.png" width="70" height="70" alt="アイキャッチ"/
+              a href="#" エントリータイトル
+            - }
+        div.l-category-lists
+          h2 Category
+          ul
+            - 1.upto(7) {|num|
+            li
+              a href="#" カテゴリー#{num}
+            - }
+        div.l-author
+          h2 Author
+          div.l-author-contents
+            img src="images/profile_icon.gif" width="100" height="100" alt="Authorの画像"/
+            p 
+              | 大阪在住の大学生くうすけです。
+              | チョコと布団とWordPressが好き。
+              | Webデザイン・コーディングの勉強中です。
+              a href="#" 詳しくはこちら
+      p.copy
+        small &copy; 2015 PengNote
+    script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"
+    script src="js/jquery.fs.naver.min.js"
+    script src="js/script.js"
