@@ -589,6 +589,30 @@ img {
   text-align: center;
 }
 
+.l-single-pager ul {
+  overflow: hidden;
+  *zoom: 1;
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+  list-style-type: none;
+}
+.l-single-pager .previous {
+  float: left;
+}
+.l-single-pager .previous a {
+  padding: 5px 14px;
+  border: 1px solid #29abe2;
+  border-radius: 15px;
+}
+.l-single-pager .next {
+  float: right;
+}
+.l-single-pager .next a {
+  padding: 5px 14px;
+  border: 1px solid #29abe2;
+  border-radius: 15px;
+}
+
 .l-footer-contents {
   padding: 0 15px;
 }
