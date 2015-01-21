@@ -756,6 +756,20 @@ img {
   border-width: 0 1px 1px;
 }
 
+.entry-body h2 {
+  border-bottom: 2px solid #29abe2;
+  padding: .2em 0;
+}
+.entry-body h3 {
+  border-left: 4px solid #29abe2;
+  padding-left: .6em;
+}
+.entry-body blockquote {
+  background: url(../images/bq.png) no-repeat left top;
+  border: 2px dotted #ddd;
+  padding: 15px 10px;
+}
+
 .copy {
   margin: 0;
   padding: .8em 1em;
