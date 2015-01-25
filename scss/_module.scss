@@ -32,6 +32,20 @@ img {
   font-size: 1.5em;
 }
 
+.entry-header {
+  margin-bottom: 20px;
+  .category {
+    margin-right: .6em;
+    border-radius: 7px;
+    background: $themeCo;
+
+    a {
+      color: #fff;
+      padding: 2px 3px;
+    }
+  }
+}
+
 .postedtime {
   margin: 0;
 }
@@ -45,18 +59,11 @@ img {
 .entry-data-lists {
   @include clearfix;
   @include reset-list;
+  margin: 0;
 
-  li {float: left;}
-}
-
-.category {
-  margin-right: .6em;
-  border-radius: 7px;
-  background: $themeCo;
-
-  a {
-    color: #fff;
-    padding: 2px 3px;
+  li {
+    margin-right: 10px;
+    float: left;
   }
 }
 

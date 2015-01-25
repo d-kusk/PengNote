@@ -434,6 +434,19 @@ img {
   font-size: 1.5em;
 }
 
+.entry-header {
+  margin-bottom: 20px;
+}
+.entry-header .category {
+  margin-right: .6em;
+  border-radius: 7px;
+  background: #29abe2;
+}
+.entry-header .category a {
+  color: #fff;
+  padding: 2px 3px;
+}
+
 .postedtime {
   margin: 0;
 }
@@ -450,19 +463,11 @@ img {
   -webkit-padding-start: 0;
   -moz-padding-start: 0;
   list-style-type: none;
+  margin: 0;
 }
 .entry-data-lists li {
+  margin-right: 10px;
   float: left;
-}
-
-.category {
-  margin-right: .6em;
-  border-radius: 7px;
-  background: #29abe2;
-}
-.category a {
-  color: #fff;
-  padding: 2px 3px;
 }
 
 .page-numbers {

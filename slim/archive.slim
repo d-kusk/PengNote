@@ -30,17 +30,13 @@ html lang="ja"
       article.l-entry-area
         img src="images/thumbnail.png" width="450" height="279" alt="アイキャッチ" class="eyecatch"/
         .entry-content
-          p.postedtime
-            time pubdate="pubdate" datetime="2015-01-09" 2015-01-09
-          h2.entry-title 
-            a href="#" エントリータイトル
           ul.entry-data-lists
+            li.postedtime
+              time pubdate="pubdate" datetime="2015-01-09" 2015-01-09
             li.category
               a href="#" カテゴリー
-            li.tag
-              - 2.times {
-              a href="#" タグ
-              - }
+          h2.entry-title
+            a href="#" エントリータイトル
       -}
       nav.l-archives-pager
         span.page-numbers.current 1
