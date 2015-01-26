@@ -34,15 +34,16 @@ img {
 
 .entry-header {
   margin-bottom: 20px;
-  .category {
-    margin-right: .6em;
+}
+
+.tag {
+
+  a {
     border-radius: 7px;
     background: $themeCo;
-
-    a {
-      color: #fff;
-      padding: 2px 3px;
-    }
+    color: #fff;
+    font-size: .9em;
+    padding: 4px 9px;
   }
 }
 

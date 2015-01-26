@@ -437,14 +437,13 @@ img {
 .entry-header {
   margin-bottom: 20px;
 }
-.entry-header .category {
-  margin-right: .6em;
+
+.tag a {
   border-radius: 7px;
   background: #29abe2;
-}
-.entry-header .category a {
   color: #fff;
-  padding: 2px 3px;
+  font-size: .9em;
+  padding: 4px 9px;
 }
 
 .postedtime {
