@@ -48,24 +48,16 @@ html lang="ja"
         a.next.page-numbers href="http://peng-note.com/page/2" » 
     footer.l-global-footer
       div.l-footer-contents
-        div.l-popular-posts
-          h2 Popular Posts
-          ol
-            - 3.times {
-            li
-              img src="images/thumbnail.png" width="70" height="70" alt="アイキャッチ"/
-              a href="#" エントリータイトル
-            - }
-        div.l-category-lists
-          h2 Category
+        div.l-footer-widget
+          h2 TagCloud
           ul
-            - 1.upto(7) {|num|
             li
-              a href="#" カテゴリー#{num}
-            - }
-        div.l-author
+              - 1.upto(7) {|num|
+              a.tag href="#" タグ#{num}
+              - }
+        div.l-footer-widget
           h2 Author
-          div.l-author-contents
+          div.author-content
             img src="images/profile_icon.gif" width="100" height="100" alt="Authorの画像"/
             p 
               | 大阪在住の大学生くうすけです。

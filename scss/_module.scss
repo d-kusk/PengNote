@@ -37,14 +37,11 @@ img {
 }
 
 .tag {
-
-  a {
-    border-radius: 7px;
-    background: $themeCo;
-    color: #fff;
-    font-size: .9em;
-    padding: 4px 9px;
-  }
+  border-radius: 7px;
+  background: $themeCo;
+  color: #fff;
+  font-size: .9em;
+  padding: 4px 9px;
 }
 
 .postedtime {
@@ -79,59 +76,4 @@ img {
 .current {
   background-color: $themeCo;
   color: #fff;
-}
-
-.l-popular-posts {
-  h2 {
-    border-bottom: 3px solid $themeCo;
-  }
-
-  ol {
-    @include reset-list;
-
-    li {
-      display: table;
-      margin-bottom: .6em;
-      border-bottom: 1px dotted #ededed;
-
-      &:last-of-type {
-        border-bottom: none;
-      }
-
-      img,
-      a {
-        display: table-cell;
-      }
-
-      a {
-        padding-left: .6em;
-        vertical-align: middle;
-      }
-    }
-  }
-}
-
-.l-category-lists {
-  h2 {
-    border-bottom: 3px solid $themeCo;
-  }
-
-  ul {
-    @include reset-list;
-
-    li {
-      margin-bottom: .6em;
-      border-bottom: 1px dotted #ededed;
-
-      &:last-of-type {
-        border-bottom: none;
-      }
-    }
-  }
-}
-
-.l-author {
-  h2 {
-    border-bottom: 2px solid $themeCo;
-  }
 }

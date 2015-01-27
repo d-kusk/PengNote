@@ -438,7 +438,7 @@ img {
   margin-bottom: 20px;
 }
 
-.tag a {
+.tag {
   border-radius: 7px;
   background: #29abe2;
   color: #fff;
@@ -480,51 +480,6 @@ img {
 .current {
   background-color: #29abe2;
   color: #fff;
-}
-
-.l-popular-posts h2 {
-  border-bottom: 3px solid #29abe2;
-}
-.l-popular-posts ol {
-  -webkit-padding-start: 0;
-  -moz-padding-start: 0;
-  list-style-type: none;
-}
-.l-popular-posts ol li {
-  display: table;
-  margin-bottom: .6em;
-  border-bottom: 1px dotted #ededed;
-}
-.l-popular-posts ol li:last-of-type {
-  border-bottom: none;
-}
-.l-popular-posts ol li img,
-.l-popular-posts ol li a {
-  display: table-cell;
-}
-.l-popular-posts ol li a {
-  padding-left: .6em;
-  vertical-align: middle;
-}
-
-.l-category-lists h2 {
-  border-bottom: 3px solid #29abe2;
-}
-.l-category-lists ul {
-  -webkit-padding-start: 0;
-  -moz-padding-start: 0;
-  list-style-type: none;
-}
-.l-category-lists ul li {
-  margin-bottom: .6em;
-  border-bottom: 1px dotted #ededed;
-}
-.l-category-lists ul li:last-of-type {
-  border-bottom: none;
-}
-
-.l-author h2 {
-  border-bottom: 2px solid #29abe2;
 }
 
 .l-global-header {
@@ -569,6 +524,26 @@ img {
 }
 .l-entry-area:last-of-type {
   border-bottom: none;
+}
+
+.l-footer-contents {
+  padding: 0 15px;
+  border-top: 2px solid #29abe2;
+}
+
+.l-footer-widget img {
+  float: left;
+  margin-right: 10px;
+}
+.l-footer-widget ul {
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+  list-style-type: none;
+}
+
+.author-content {
+  overflow: hidden;
+  *zoom: 1;
 }
 
 @media screen and (min-width: 481px) {
@@ -617,40 +592,22 @@ img {
   border-radius: 15px;
 }
 
-.l-footer-contents {
-  padding: 0 15px;
-}
-
 @media screen and (min-width: 768px) {
   .l-footer-contents {
     width: 768px;
     margin: 0 auto;
+    overflow: hidden;
+    *zoom: 1;
     margin-bottom: 30px;
   }
 
-  .l-popular-posts {
-    width: 55%;
-    float: right;
-    margin-left: 5%;
-  }
-
-  .l-category-lists {
-    width: 40%;
+  .l-footer-widget {
+    width: 48%;
+    margin-left: 4%;
     float: right;
   }
-
-  .l-author-contents {
-    overflow: hidden;
-    *zoom: 1;
-  }
-  .l-author-contents img {
-    width: 10%;
-    float: left;
-  }
-  .l-author-contents p {
-    width: 85%;
-    margin-left: 5%;
-    float: left;
+  .l-footer-widget:last-child {
+    margin: 0;
   }
 }
 /* 
