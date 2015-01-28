@@ -445,6 +445,9 @@ img {
   font-size: .9em;
   padding: 4px 9px;
 }
+.tag:hover {
+  background: #6cc5eb;
+}
 
 .postedtime {
   margin: 0;
