@@ -10,6 +10,9 @@
 // 各色などの変数
 $themeCo: #29abe2;
 
+// ブレイクポイント
+$small: "min-width: 481px";
+$middle: "min-width: 660px";// 768
 
 body {
   font-family: "游ゴシック", YuGothic,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','メイリオ',Meiryo,'ＭＳ Ｐゴシック',sans-serif;

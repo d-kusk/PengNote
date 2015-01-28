@@ -502,9 +502,9 @@ img {
   margin-top: -10px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 660px) {
   .l-global-nav {
-    width: 768px;
+    width: 660px;
     margin: 0 auto;
   }
 }
@@ -512,9 +512,9 @@ img {
   padding: 0 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 660px) {
   .l-contents {
-    width: 768px;
+    width: 660px;
     margin: 0 auto;
   }
 }
@@ -595,9 +595,9 @@ img {
   border-radius: 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 660px) {
   .l-footer-contents {
-    width: 768px;
+    width: 660px;
     margin: 0 auto;
     overflow: hidden;
     *zoom: 1;

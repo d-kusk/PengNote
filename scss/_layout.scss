@@ -14,7 +14,7 @@
   p {margin-top: -10px;}
 }
 
-@media screen and (min-width: 768px) {
+@media screen and ($middle) {
   .l-global-nav {@include center;}
 }
 
@@ -22,7 +22,7 @@
   padding: 0 15px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and ($middle) {
   .l-contents {@include center;}
 }
 
@@ -59,7 +59,7 @@
   @include clearfix;
 }
 
-@media screen and (min-width:481px) {
+@media screen and ($small) {
   .l-entry-area {
     @include clearfix;
   }
@@ -106,7 +106,7 @@
   }
 }
 
-@media screen and (min-width:768px) {
+@media screen and ($middle) {
   .l-footer-contents {
     @include center;
     @include clearfix;
