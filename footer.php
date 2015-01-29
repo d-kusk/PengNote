@@ -1,3 +1,4 @@
+<?php wp_footer(); ?>
     <footer class="l-global-footer">
       <div class="l-footer-contents">
         <?php if ( is_active_sidebar('footer-widget') ) :
