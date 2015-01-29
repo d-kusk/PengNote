@@ -497,6 +497,22 @@ img {
   color: #fff;
 }
 
+.previous a,
+.next a {
+  padding: 5px 14px;
+  border: 1px solid #29abe2;
+  border-radius: 15px;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.previous a:hover,
+.next a:hover {
+  background: #29abe2;
+  color: #fff;
+}
+
 .l-global-header {
   margin-bottom: 40px;
 }
@@ -597,18 +613,8 @@ img {
 .l-single-pager .previous {
   float: left;
 }
-.l-single-pager .previous a {
-  padding: 5px 14px;
-  border: 1px solid #29abe2;
-  border-radius: 15px;
-}
 .l-single-pager .next {
   float: right;
-}
-.l-single-pager .next a {
-  padding: 5px 14px;
-  border: 1px solid #29abe2;
-  border-radius: 15px;
 }
 
 @media screen and (min-width: 660px) {
