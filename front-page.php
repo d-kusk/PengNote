@@ -17,7 +17,7 @@
         </div>
       </article>
       <nav class="l-archives-pager">
-        <span class="page-numbers current">1</span><a class="page-numbers" href="http://peng-note.com/page/2">2</a><a class="page-numbers" href="http://peng-note.com/page/2">3</a><a class="page-numbers" href="http://peng-note.com/page/2">4</a><a class="page-numbers" href="http://peng-note.com/page/2">5</a><span class="page-numbers dots">…</span><a class="page-numbers" href="http://peng-note.com/page/17">17</a><a class="next page-numbers" href="http://peng-note.com/page/2">» </a>
+        <?php pagerNavi($wp_query->max_num_pages,$paged); ?>
       </nav>
     </main>
 <?php get_footer(); ?>
