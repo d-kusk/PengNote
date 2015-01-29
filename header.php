@@ -31,9 +31,15 @@
         <p><?php bloginfo('description'); ?></p>
       </div>
       <nav class="l-global-nav">
-        <ul class="l-global-nav-contents">
-          <li><a href="#">ナビゲーション</a></li>
-        </ul>
+      <?php
+      // グローバルメニュー
+      $args = array(
+          'container' => false,
+          'menu_class' => 'l-global-nav-contents',
+          'theme_location' => 'place_global',
+        );
+      wp_nav_menu( $args );
+      ?>
       </nav>
     </header>
     <?php if(is_single()): ?>
