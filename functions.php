@@ -3,6 +3,11 @@
 add_theme_support( 'menus' );
 register_nav_menu( 'place_global', 'グローバルナビゲーション' );
 
+// アイキャッチ画像
+add_theme_support( 'post-thumbnails' );
+add_image_size( 'archive', 450, 280, true );
+add_image_size( 'large', 660, 460, false );
+
 // ウィジェットの有効化
 function footer_widgets_init() {
   register_sidebar(array(

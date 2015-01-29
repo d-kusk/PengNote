@@ -1,10 +1,15 @@
 <?php get_header(); ?>
     <main class="l-contents">
-      <h1 class="archive-title">
-        ◯◯の記事一覧
-      </h1>
+      <h1 class="archive-title">◯◯の記事一覧</h1>
       <article class="l-entry-area">
-        <a class="l-eyecatch-area" href="#"><img alt="アイキャッチ" height="279" src="images/thumbnail.png" width="450" /></a>
+        <a class="l-eyecatch-area" href="#">
+          <?php if (has_post_thumbnail())
+              the_post_thumbnail( 'archive' );
+          else
+            // デフォルトサムネイル
+            echo '<img src="' . get_bloginfo('template_directory') . '/images/thumbnail.png' . '" width="450" height="279" alt="thumbnail" />';
+          ?>
+        </a>
         <div class="l-entry-content">
           <ul class="entry-data-lists">
             <li class="postedtime">

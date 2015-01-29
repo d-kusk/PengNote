@@ -21,7 +21,9 @@
           </ul>
         </header>
         <div class="entry-body">
-          <img alt="アイキャッチ" class="page-eyecatch" height="279" src="images/thumbnail.png" width="450" />
+          <?php if(has_post_thumbnail())
+            the_post_thumbnail( 'large' );
+          ?>
           <h2>
             見出し
           </h2>
