@@ -1,7 +1,7 @@
 @charset "utf-8";
 
 @import "_base";
-@import "compass/utilities/general/clearfix";
+@import "compass";
 @import "_module";
 @import "_layout";
 
@@ -22,6 +22,7 @@
   line-height: 40px;
   margin: 0 1px 0 0;
   padding: 0 15px;
+  @include transition(all 0.6s ease);
 
   &:hover { background: lighten($themeCo, 20%); }
 }
