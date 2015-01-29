@@ -1,7 +1,7 @@
 <?php get_header(); ?>
     <main class="l-contents">
-      <h1 class="archive-title">◯◯の記事一覧</h1>
-      <article class="l-entry-area">
+      <h1 class="archive-title"><?php single_cat_title(); ?>の記事一覧</h1>
+      <article class="l-entry-area post-<?php the_ID(); ?> <?php post_class(); ?>">
         <a class="l-eyecatch-area" href="#">
           <?php if (has_post_thumbnail())
               the_post_thumbnail( 'archive' );
@@ -13,35 +13,19 @@
         <div class="l-entry-content">
           <ul class="entry-data-lists">
             <li class="postedtime">
-              <time datetime="2015-01-09" pubdate="pubdate">2015-01-09</time>
+              <time datetime="<?php echo get_the_date('Y-m-d'); ?>" pubdate="pubdate"><?php the_time(get_option('date_format')); ?></time>
             </li>
             <li class="category">
-              <a href="#">カテゴリー</a>
+              <?php if (get_the_category()) the_category(', '); ?></a>
             </li>
           </ul>
           <h2 class="entry-title">
-            <a href="#">エントリータイトル</a>
-          </h2>
-        </div>
-      </article>
-      <article class="l-entry-area">
-        <a class="l-eyecatch-area" href="#"><img alt="アイキャッチ" height="279" src="images/thumbnail.png" width="450" /></a>
-        <div class="l-entry-content">
-          <ul class="entry-data-lists">
-            <li class="postedtime">
-              <time datetime="2015-01-09" pubdate="pubdate">2015-01-09</time>
-            </li>
-            <li class="category">
-              <a href="#">カテゴリー</a>
-            </li>
-          </ul>
-          <h2 class="entry-title">
-            <a href="#">エントリータイトル</a>
+            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
           </h2>
         </div>
       </article>
       <nav class="l-archives-pager">
-        <span class="page-numbers current">1</span><a class="page-numbers" href="http://peng-note.com/page/2">2</a><a class="page-numbers" href="http://peng-note.com/page/2">3</a><a class="page-numbers" href="http://peng-note.com/page/2">4</a><a class="page-numbers" href="http://peng-note.com/page/2">5</a><span class="page-numbers dots">…</span><a class="page-numbers" href="http://peng-note.com/page/17">17</a><a class="next page-numbers" href="http://peng-note.com/page/2">» </a>
+        <?php pagerNavi($wp_query->max_num_pages,$paged); ?>
       </nav>
     </main>
 <?php get_footer(); ?>

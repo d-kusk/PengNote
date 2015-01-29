@@ -1,22 +1,21 @@
 <?php get_header(); ?>
     <main class="l-contents">
-      <article class="l-entry-area">
+      <article class="l-entry-area post-<?php the_ID(); ?> <?php post_class(); ?>">
         <header class="entry-header">
           <ul class="entry-data-lists">
             <li class="postedtime">
-              <time datetime="2015-01-09" pubdate="pubdate">2015-01-09</time>
+              <time datetime="<?php echo get_the_date('Y-m-d'); ?>" pubdate="pubdate"><?php the_time(get_option('date_format')); ?></time>
             </li>
             <li class="category">
-              <a href="#">カテゴリー</a>
+              <?php if (get_the_category()) the_category(', '); ?>
             </li>
           </ul>
           <h2 class="entry-title">
-            エントリータイトル
+            <?php the_title(); ?>
           </h2>
           <ul class="entry-data-lists">
             <li>
-              <a class="tag" href="#">タグ</a>
-              <a class="tag" href="#">タグ</a>
+              <?php if (get_the_tags()) the_tags('', ', ', ''); ?>
             </li>
           </ul>
         </header>

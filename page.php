@@ -1,13 +1,15 @@
 <?php get_header(); ?>
     <main class="l-contents">
-      <article class="l-entry-area">
+      <article class="l-entry-area post-<?php the_ID(); ?> <?php post_class(); ?>">
         <header class="entry-header">
           <h2 class="entry-title">
-            エントリータイトル
+            <?php the_title(); ?>
           </h2>
         </header>
         <div class="entry-body">
-          <img alt="アイキャッチ" class="page-eyecatch" height="279" src="images/thumbnail.png" width="450" />
+          <?php if(has_post_thumbnail())
+            the_post_thumbnail( 'large' );
+          ?>
           <h2>
             見出し
           </h2>
