@@ -28,7 +28,7 @@
         <h1 class="logo">
           <a href="<?php bloginfo('url'); ?>"><img alt="PengNote" height="55" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" width="238" /></a>
         </h1>
-        <p>勉強した事や行った場所の感想を書くブログ</p>
+        <p><?php bloginfo('description'); ?></p>
       </div>
       <nav class="l-global-nav">
         <ul class="l-global-nav-contents">
