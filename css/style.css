@@ -444,6 +444,10 @@ img {
   color: #fff;
   font-size: .9em;
   padding: 4px 9px;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 .tag:hover {
   background: #6cc5eb;
@@ -478,10 +482,34 @@ img {
   border-radius: 3px;
   padding: 5px;
   margin: 0 6px;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.page-numbers:hover {
+  background: #29abe2;
+  color: #fff;
 }
 
 .current {
   background-color: #29abe2;
+  color: #fff;
+}
+
+.previous a,
+.next a {
+  padding: 5px 14px;
+  border: 1px solid #29abe2;
+  border-radius: 15px;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
+}
+.previous a:hover,
+.next a:hover {
+  background: #29abe2;
   color: #fff;
 }
 
@@ -585,18 +613,8 @@ img {
 .l-single-pager .previous {
   float: left;
 }
-.l-single-pager .previous a {
-  padding: 5px 14px;
-  border: 1px solid #29abe2;
-  border-radius: 15px;
-}
 .l-single-pager .next {
   float: right;
-}
-.l-single-pager .next a {
-  padding: 5px 14px;
-  border: 1px solid #29abe2;
-  border-radius: 15px;
 }
 
 @media screen and (min-width: 660px) {
@@ -633,6 +651,10 @@ img {
   line-height: 40px;
   margin: 0 1px 0 0;
   padding: 0 15px;
+  -moz-transition: all 0.6s ease;
+  -o-transition: all 0.6s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
 }
 .naver a:hover {
   background: #83ceee;

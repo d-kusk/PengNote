@@ -89,23 +89,13 @@
     @include clearfix;
     @include reset-list;
   }
+  
   .previous {
     float: left;
-
-    a {
-      padding: 5px 14px;
-      border: 1px solid $themeCo;
-      border-radius: 15px;
-    }
   }
+
   .next {
     float: right;
-
-    a {
-      padding: 5px 14px;
-      border: 1px solid $themeCo;
-      border-radius: 15px;
-    }
   }
 }
 
