@@ -1,5 +1,4 @@
 .l-global-header {
-  padding: 0 15px;
   margin-bottom: 40px;
 }
 
@@ -13,9 +12,13 @@
   }
   p {margin-top: -10px;}
 }
+.l-global-nav {
+  width: 100%;
+  background: $themeCo;
+}
 
 @media screen and ($middle) {
-  .l-global-nav {@include center;}
+  .l-global-nav-contents {@include center;}
 }
 
 .l-contents {

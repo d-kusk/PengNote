@@ -4,6 +4,6 @@ $(function() {
       closed: " ",
       open: " "
     },
-    maxWidth: "700px"
+    maxWidth: "660px"
   });
 });
