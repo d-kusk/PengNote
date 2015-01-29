@@ -1,5 +1,10 @@
 <?php get_header(); ?>
     <main class="l-contents">
+      <?php
+      if ( have_posts() ) :
+        while ( have_posts() ) :
+          the_post();
+      ?>
       <article class="l-entry-area post-<?php the_ID(); ?> <?php post_class(); ?>">
         <a class="l-eyecatch-area" href="<?php the_permalink(); ?>">
           <?php if (has_post_thumbnail())
@@ -23,6 +28,11 @@
           </h2>
         </div>
       </article>
+      <?php endwhile;?>
+      <?php else : ?>
+        <h2>記事はありません</h2>
+        <p>お探しの記事は見つかりませんでした。</p>
+      <?php endif; ?>
       <nav class="l-archives-pager">
         <?php pagerNavi($wp_query->max_num_pages,$paged); ?>
       </nav>
