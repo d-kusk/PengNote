@@ -109,3 +109,25 @@ echo '<style type="text/css">
 </style>';
 }
 add_action('login_head', 'login_logo');
+
+//カテゴリをラジオボタンに
+function my_print_footer_scripts() {
+echo '<script type="text/javascript">
+  //<![CDATA[
+  jQuery(document).ready(function($){
+    $(".categorychecklist input[type=\"checkbox\"]").each(function(){
+      $check = $(this);
+      var checked = $check.attr("checked") ? \' checked="checked"\' : \'\';
+      $(\'<input type="radio" id="\' + $check.attr("id")
+        + \'" name="\' + $check.attr("name") + \'"\'
+    + checked
+  + \' value="\' + $check.val()
+  + \'"/>\'
+      ).insertBefore($check);
+      $check.remove();
+    });
+  });
+  //]]>
+  </script>';
+}
+add_action('admin_print_footer_scripts', 'my_print_footer_scripts', 21);
