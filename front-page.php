@@ -1,5 +1,8 @@
 <?php get_header(); ?>
     <main class="l-contents">
+      <div class="ama_link">
+        <iframe src="http://rcm-fe.amazon-adsystem.com/e/cm?t=ksk1207-22&o=9&p=13&l=ur1&category=amazongeneral&banner=0R5JC0X2XSA3C87ZTPG2&f=ifr" width="468" height="60" scrolling="no" border="0" marginwidth="0" style="border:none;" frameborder="0"></iframe>
+      </div>
       <?php
       if ( have_posts() ) :
         while ( have_posts() ) :

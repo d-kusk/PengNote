@@ -28,7 +28,19 @@
           <?php if(has_post_thumbnail())
             the_post_thumbnail( 'large' );
           ?>
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- Bottomthumbnail -->
+          <ins class="adsbygoogle"
+               style="display:inline-block;width:468px;height:60px"
+               data-ad-client="ca-pub-5766460361259641"
+               data-ad-slot="2527203811"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
           <?php the_content(); ?>
+          <?php
+          get_template_part('adsense');
+          ?>
         </div>
       </article>
       <nav class="l-single-pager">

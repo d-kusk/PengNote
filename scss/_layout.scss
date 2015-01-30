@@ -60,6 +60,15 @@
   }
 }
 
+.ads-area {
+  @include clearfix;
+
+  .ads {
+    margin: 0 10px;
+    float: left;
+  }
+}
+
 .l-footer-contents {
   padding: 0 15px;
   border-top: 2px solid $themeCo;

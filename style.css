@@ -590,6 +590,15 @@ img {
   border-bottom: none;
 }
 
+.ads-area {
+  overflow: hidden;
+  *zoom: 1;
+}
+.ads-area .ads {
+  margin: 0 10px;
+  float: left;
+}
+
 .l-footer-contents {
   padding: 0 15px;
   border-top: 2px solid #29abe2;
