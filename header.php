@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title><?php if ( !is_home() ) {wp_title( '|', true, 'right' );} elseif (is_404()) {?>ページが見つかりませんでした。 | <?php }bloginfo('name');?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="PY-rmkE6_kfIi6H0kQibRDyXqN7PLkNSiTq68oyxAlk" />
     <?php
     if (is_tag() || is_404() || is_search())
