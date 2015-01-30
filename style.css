@@ -784,7 +784,7 @@ img {
   padding-left: .6em;
 }
 .entry-body blockquote {
-  background: url(../images/bq.png) no-repeat left top;
+  background: url(images/bq.png) no-repeat 5px 5px;
   border: 2px dotted #ddd;
   padding: 15px 10px;
 }
