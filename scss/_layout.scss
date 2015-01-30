@@ -17,8 +17,26 @@
   background: $themeCo;
 }
 
+.l-breadcrumbs {
+  @include clearfix;
+  padding: 0 15px;
+
+  li {
+    float: left;
+    margin-right: .4em;
+
+    a {
+      margin-right: .4em;
+    }
+  }
+}
+
 @media screen and ($middle) {
   .l-global-nav-contents {@include center;}
+
+  .l-breadcrumbs {
+    @include center;
+  }
 }
 
 .l-contents {
@@ -39,6 +57,15 @@
 
   &:last-of-type {
     border-bottom: none;
+  }
+}
+
+.ads-area {
+  @include clearfix;
+
+  .ads {
+    margin: 0 10px;
+    float: left;
   }
 }
 

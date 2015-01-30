@@ -1,4 +1,12 @@
 @charset "utf-8";
+/*
+Theme Name: PengNote
+Theme URI: 
+Description: PengNoteのテーマ
+Version: 0.2
+Author: Daisuke Konishi
+Author URI: peng-note.com
+*/
 
 @import "_base";
 @import "compass";
@@ -47,7 +55,7 @@
   }
 
   blockquote {
-    background: url(../images/bq.png) no-repeat left top;// ファイルの指定などは後日
+    background: url(images/bq.png) no-repeat 5px 5px;// ファイルの指定などは後日
     border: 2px dotted #ddd;// 適宜調整
     padding: 15px 10px;
   }

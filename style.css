@@ -1,4 +1,12 @@
 @charset "UTF-8";
+/*
+Theme Name: PengNote
+Theme URI: 
+Description: PengNoteのテーマ
+Version: 0.2
+Author: Daisuke Konishi
+Author URI: peng-note.com
+*/
 /*! normalize.css v3.0.1 | MIT License | git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -428,6 +436,12 @@ img {
   font-size: .9rem;
 }
 
+.l-breadcrumbs {
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+  list-style-type: none;
+}
+
 .archive-title {
   margin-bottom: 30px;
   border-bottom: 2px solid #29abe2;
@@ -435,10 +449,11 @@ img {
 }
 
 .entry-header {
-  margin-bottom: 20px;
+  margin: 20px auto;
 }
 
-.tag {
+.entry-data-lists .tag a,
+.tagcloud a {
   border-radius: 7px;
   background: #29abe2;
   color: #fff;
@@ -449,7 +464,8 @@ img {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
-.tag:hover {
+.entry-data-lists .tag a:hover,
+.tagcloud a:hover {
   background: #6cc5eb;
 }
 
@@ -491,12 +507,15 @@ img {
   background: #29abe2;
   color: #fff;
 }
-
-.current {
+.page-numbers .current {
   background-color: #29abe2;
   color: #fff;
 }
 
+.previous,
+.next {
+  max-width: 40%;
+}
 .previous a,
 .next a {
   padding: 5px 14px;
@@ -534,8 +553,26 @@ img {
   background: #29abe2;
 }
 
+.l-breadcrumbs {
+  overflow: hidden;
+  *zoom: 1;
+  padding: 0 15px;
+}
+.l-breadcrumbs li {
+  float: left;
+  margin-right: .4em;
+}
+.l-breadcrumbs li a {
+  margin-right: .4em;
+}
+
 @media screen and (min-width: 660px) {
   .l-global-nav-contents {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .l-breadcrumbs {
     width: 660px;
     margin: 0 auto;
   }
@@ -559,6 +596,15 @@ img {
 }
 .l-entry-area:last-of-type {
   border-bottom: none;
+}
+
+.ads-area {
+  overflow: hidden;
+  *zoom: 1;
+}
+.ads-area .ads {
+  margin: 0 10px;
+  float: left;
 }
 
 .l-footer-contents {
@@ -755,7 +801,7 @@ img {
   padding-left: .6em;
 }
 .entry-body blockquote {
-  background: url(../images/bq.png) no-repeat left top;
+  background: url(images/bq.png) no-repeat 5px 5px;
   border: 2px dotted #ddd;
   padding: 15px 10px;
 }
