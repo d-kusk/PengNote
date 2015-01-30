@@ -96,3 +96,16 @@ function ex_wp_tag_cloud( $tags ) {
     return preg_replace( $match, '',  $tags );
 }
 add_filter( 'wp_tag_cloud', 'ex_wp_tag_cloud' );
+
+//ログイン画面のロゴ変更
+function login_logo() {
+echo '<style type="text/css">
+#login h1 a {
+  background: url('.get_template_directory_uri().'/images/logo.png) no-repeat;
+  width: 238px;
+  height: 55px;
+  background-size:100% auto;
+}
+</style>';
+}
+add_action('login_head', 'login_logo');
