@@ -131,3 +131,6 @@ echo '<script type="text/javascript">
   </script>';
 }
 add_action('admin_print_footer_scripts', 'my_print_footer_scripts', 21);
+
+// WordPressのバージョンを消す
+remove_action('wp_head','wp_generator');
