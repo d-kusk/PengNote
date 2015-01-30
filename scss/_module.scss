@@ -91,6 +91,8 @@ img {
 
 .previous,
 .next {
+  max-width: 40%;
+  
   a {
     padding: 5px 14px;
     border: 1px solid $themeCo;

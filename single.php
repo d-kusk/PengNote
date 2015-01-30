@@ -35,12 +35,12 @@
         <ul>
           <?php if ( get_previous_post() ) : ?>
           <li class="previous">
-            <?php previous_post_link('%link', '&laquo 前の記事<br> %title'); ?>
+            <?php Custom_previous_post_link(8, '%link', '&laquo; %title', true) ?>
           </li>
           <?php endif; ?>
           <?php if( get_next_post() ) : ?>
           <li class="next">
-            <?php next_post_link('%link', '次の記事 &raquo<br> %title'); ?>
+            <?php Custom_next_post_link(8, '%link', '&laquo; %title', true) ?>
           <?php endif;?>
           </li>
         </ul>

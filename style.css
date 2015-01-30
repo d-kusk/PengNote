@@ -497,6 +497,10 @@ img {
   color: #fff;
 }
 
+.previous,
+.next {
+  max-width: 40%;
+}
 .previous a,
 .next a {
   padding: 5px 14px;

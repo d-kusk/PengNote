@@ -43,3 +43,45 @@ function pagerNavi($maxNum,$pCur){
       'next_text' => '»',
   ));
 }
+
+// 個別ページのナビゲーションの設定
+function Custom_previous_post_link($maxlen = -1, $format='&laquo; %link', $link='%title', $in_same_cat = false, $excluded_categories = '') {
+  Custom_adjacent_post_link($maxlen, $format, $link, $in_same_cat, $excluded_categories, true, $maxlen);
+}
+function Custom_next_post_link($maxlen = -1, $format='%link &raquo;', $link='%title', $in_same_cat = false, $excluded_categories = '') {
+  Custom_adjacent_post_link($maxlen, $format, $link, $in_same_cat, $excluded_categories, false);
+}
+
+function Custom_adjacent_post_link($maxlen = -1, $format='&laquo; %link', $link='%title', $in_same_cat = false, $excluded_categories = '', $previous = true) {
+
+  if ( $previous && is_attachment() )
+    $post = & get_post($GLOBALS['post']->post_parent);
+  else
+    $post = get_adjacent_post($in_same_cat, $excluded_categories, $previous);
+
+  if ( !$post )
+    return;
+
+  $tCnt = mb_strlen( $post->post_title, get_bloginfo('charset') );
+  
+  if(($maxlen > 0)&&($tCnt > $maxlen)) {
+    $title = mb_substr( $post->post_title, 0, $maxlen, get_bloginfo('charset') ) . '…';
+  } else {
+    $title = $post->post_title;
+  }
+
+  if ( empty($post->post_title) )
+    $title = $previous ? __('Previous Post') : __('Next Post');
+
+  $title = apply_filters('the_title', $title, $post->ID);
+  $date = mysql2date(get_option('date_format'), $post->post_date);
+  $rel = $previous ? 'prev' : 'next';
+
+  $string = '<a href="'.get_permalink($post).'" rel="'.$rel.'">';
+  $link = str_replace('%title', $title, $link);
+  $link = str_replace('%date', $date, $link);
+  $link = $string . $link . '</a>';
+
+  $format = str_replace('%link', $link, $format);
+  echo $format;
+}
