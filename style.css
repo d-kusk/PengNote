@@ -444,7 +444,8 @@ img {
   margin: 20px auto;
 }
 
-.tag {
+.entry-data-lists .tag a,
+.tagcloud a {
   border-radius: 7px;
   background: #29abe2;
   color: #fff;
@@ -455,7 +456,8 @@ img {
   -webkit-transition: all 0.6s ease;
   transition: all 0.6s ease;
 }
-.tag:hover {
+.entry-data-lists .tag a:hover,
+.tagcloud a:hover {
   background: #6cc5eb;
 }
 

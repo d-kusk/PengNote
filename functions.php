@@ -85,3 +85,14 @@ function Custom_adjacent_post_link($maxlen = -1, $format='&laquo; %link', $link=
   $format = str_replace('%link', $link, $format);
   echo $format;
 }
+
+// タグクラウドの不要なクラスを削除
+function ex_wp_tag_cloud( $tags ) {
+    $match = array(
+        "/ class='tag-link-(\d+)'/i",                //クラス、除去しないならこの行を削除
+        "/ title='([^']+)'/i",                    //マウスホバーで表示されるタイトル、除去しないならこの行を削除
+        "/ style='font-size: \d+(\.)*\d*(pt|px|em|\%);'/i",    //文字サイズ
+    );
+    return preg_replace( $match, '',  $tags );
+}
+add_filter( 'wp_tag_cloud', 'ex_wp_tag_cloud' );

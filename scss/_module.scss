@@ -40,16 +40,19 @@ img {
   margin: 20px auto;
 }
 
-.tag {
-  border-radius: 7px;
-  background: $themeCo;
-  color: #fff;
-  font-size: .9em;
-  padding: 4px 9px;
-  @include transition(all 0.6s ease);
+.entry-data-lists .tag,
+.tagcloud {
+  a {
+    border-radius: 7px;
+    background: $themeCo;
+    color: #fff;
+    font-size: .9em;
+    padding: 4px 9px;
+    @include transition(all 0.6s ease);
 
-  &:hover {
-    background: lighten($themeCo, 15%);
+    &:hover {
+      background: lighten($themeCo, 15%);
+    }
   }
 }
 

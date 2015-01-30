@@ -19,8 +19,8 @@
             <?php the_title(); ?>
           </h2>
           <ul class="entry-data-lists">
-            <li>
-              <?php if (get_the_tags()) the_tags('', ', ', ''); ?>
+            <li class="tag">
+              <?php if (get_the_tags()) the_tags('', ' ', ''); ?>
             </li>
           </ul>
         </header>
@@ -38,7 +38,7 @@
             <?php Custom_previous_post_link(8, '%link', '&laquo; %title', true) ?>
           </li>
           <?php endif; ?>
-          <?php if( get_next_post() ) : ?>
+          <?php if ( get_next_post() ) : ?>
           <li class="next">
             <?php Custom_next_post_link(8, '%link', '&laquo; %title', true) ?>
           <?php endif;?>
