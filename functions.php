@@ -37,7 +37,7 @@ function pagerNavi($maxNum,$pCur){
       'base' => $paginate_base,
       'format' => $paginate_format,
       'total' => $maxNum,
-      'mid_size' => 4,
+      'mid_size' => 3, // ページャーの…前の数
       'current' => ($pCur ? $pCur : 1),
       'prev_text' => '«',
       'next_text' => '»',
