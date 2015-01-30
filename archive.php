@@ -37,5 +37,6 @@
       <nav class="l-archives-pager">
         <?php pagerNavi($wp_query->max_num_pages,$paged); ?>
       </nav>
+      <?php get_template_part('adsense'); ?>
     </main>
 <?php get_footer(); ?>
