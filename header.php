@@ -43,18 +43,18 @@
       </nav>
     </header>
     <?php if(is_single()): ?>
-    <ul id="breadcrumbs">
-      <li><a href="<?php echo get_option('home'); ?>">HOME</a></li>
-      <li><a href="<?php $cat = get_the_category(); $cat = [0]; echo get_category_link( $cat->term_id ); ?>"><?php echo $cat->cat_name; ?></a></li>
-      <li><?php the_title(''); ?></li>
+    <ul class="l-breadcrumbs">
+      <li><a href="<?php echo get_option('home'); ?>">HOME</a>&gt;</li>
+      <li><a href="<?php $cat = get_the_category(); $cat = $cat[0]; echo get_category_link( $cat->term_id ); ?>"><?php echo $cat->cat_name; ?></a>&gt;</li>
+      <li class="current"><?php the_title(''); ?></li>
     </ul>
     <?php elseif(is_page()): ?>
-    <ul id="breadcrumbs">
+    <ul class="l-breadcrumbs">
       <li><a href="<?php echo get_option('home'); ?>">HOME</a></li>
       <?php foreach ( array_reverse(get_post_ancestors($post->ID)) as $parid ) { ?>
       <li><a href="<?php echo get_page_link( $parid );?>" title="<?php echo get_page($parid)->post_name; ?>">
       <?php echo get_page($parid)->post_name; ?></a></li>
       <?php } ?>
-      <li><?php the_title(''); ?></li>
+      <li class="current"><?php the_title(''); ?></li>
     </ul>
     <?php endif;?>

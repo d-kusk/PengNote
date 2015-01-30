@@ -26,6 +26,10 @@ img {
   }
 }
 
+.l-breadcrumbs {
+  @include reset-list;
+}
+
 .archive-title {
   margin-bottom: 30px;
   border-bottom: 2px solid $themeCo;
@@ -82,11 +86,11 @@ img {
     background: $themeCo;
     color: #fff;
   }
-}
 
-.current {
-  background-color: $themeCo;
-  color: #fff;
+  .current {
+    background-color: $themeCo;
+    color: #fff;
+  }
 }
 
 .previous,

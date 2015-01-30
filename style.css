@@ -428,6 +428,12 @@ img {
   font-size: .9rem;
 }
 
+.l-breadcrumbs {
+  -webkit-padding-start: 0;
+  -moz-padding-start: 0;
+  list-style-type: none;
+}
+
 .archive-title {
   margin-bottom: 30px;
   border-bottom: 2px solid #29abe2;
@@ -491,8 +497,7 @@ img {
   background: #29abe2;
   color: #fff;
 }
-
-.current {
+.page-numbers .current {
   background-color: #29abe2;
   color: #fff;
 }
@@ -538,8 +543,26 @@ img {
   background: #29abe2;
 }
 
+.l-breadcrumbs {
+  overflow: hidden;
+  *zoom: 1;
+  padding: 0 15px;
+}
+.l-breadcrumbs li {
+  float: left;
+  margin-right: .4em;
+}
+.l-breadcrumbs li a {
+  margin-right: .4em;
+}
+
 @media screen and (min-width: 660px) {
   .l-global-nav-contents {
+    width: 660px;
+    margin: 0 auto;
+  }
+
+  .l-breadcrumbs {
     width: 660px;
     margin: 0 auto;
   }
