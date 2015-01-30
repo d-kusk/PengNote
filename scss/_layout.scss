@@ -111,22 +111,21 @@
   text-align: center;
 }
 
-.l-single-pager {
-  ul {
-    @include clearfix;
-    @include reset-list;
+@media screen and ($middle) {
+  .l-single-pager {
+    ul {
+      @include clearfix;
+    }
+    
+    .previous {
+      float: left;
+    }
+
+    .next {
+      float: right;
+    }
   }
   
-  .previous {
-    float: left;
-  }
-
-  .next {
-    float: right;
-  }
-}
-
-@media screen and ($middle) {
   .l-footer-contents {
     @include center;
     @include clearfix;

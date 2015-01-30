@@ -96,10 +96,14 @@ img {
   }
 }
 
+.l-single-pager {
+  ul {@include reset-list;}
+}
+
 .previous,
 .next {
-  max-width: 40%;
-  
+  margin: 10px 0;
+
   a {
     padding: 5px 14px;
     border: 1px solid $themeCo;

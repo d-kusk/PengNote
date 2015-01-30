@@ -48,12 +48,12 @@
         <ul>
           <?php if ( get_previous_post() ) : ?>
           <li class="previous">
-            <?php Custom_previous_post_link(8, '%link', '&laquo; %title', true) ?>
+            <?php Custom_previous_post_link(15, '%link', '&#139; %title', true) ?>
           </li>
           <?php endif; ?>
           <?php if ( get_next_post() ) : ?>
           <li class="next">
-            <?php Custom_next_post_link(8, '%link', '&laquo; %title', true) ?>
+            <?php Custom_next_post_link(15, '%link', '%title &#155;', true) ?>
           <?php endif;?>
           </li>
         </ul>
