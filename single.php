@@ -29,11 +29,11 @@
             the_post_thumbnail( 'large' );
           ?>
           <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-          <!-- Bottomthumbnail -->
+          <!-- bottomthumbnail -->
           <ins class="adsbygoogle"
-               style="display:inline-block;width:468px;height:60px"
+               style="display:inline-block;width:320px;height:100px"
                data-ad-client="ca-pub-5766460361259641"
-               data-ad-slot="2527203811"></ins>
+               data-ad-slot="4775551416"></ins>
           <script>
           (adsbygoogle = window.adsbygoogle || []).push({});
           </script>
