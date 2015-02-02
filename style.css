@@ -809,6 +809,9 @@ img {
   border: 2px dotted #ddd;
   padding: 15px 10px;
 }
+.entry-body img {
+  margin: 15px auto;
+}
 
 .copy {
   margin: 0;
