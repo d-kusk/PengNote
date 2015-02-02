@@ -14,8 +14,8 @@ function footer_widgets_init() {
    'name' => 'フッターウィジェット',
    'description' => 'フッターに置くウィジェット',
    'id' => 'footer-widget',
-   'before_widget' => '<div class="l-footer-widget">',
-   'after_widget' => '</div>',
+   'before_widget' => '<aside class="l-footer-widget">',
+   'after_widget' => '</aside>',
   ));
 }
 add_action( 'widgets_init', 'footer_widgets_init' );
