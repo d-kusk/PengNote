@@ -27,7 +27,7 @@
     <header class="l-global-header">
       <div class="l-logo-area">
         <h1 class="logo">
-          <a href="<?php bloginfo('url'); ?>"><img alt="PengNote" height="55" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" width="238" /></a>
+          <a href="<?php bloginfo('url'); ?>"><img alt="PengNote" height="55" src="<?php echo get_template_directory_uri(); ?>/images/logo.svg" width="238" /></a>
         </h1>
         <p><?php bloginfo('description'); ?></p>
       </div>
