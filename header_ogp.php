@@ -1,7 +1,7 @@
   <meta property="og:type" content="blog">
   <?php
   if (is_single()){//単一記事ページの場合
-    if(have_posts()): 
+    if(have_posts()):
       while(have_posts()): the_post();
         echo '<meta property="og:description" content="'.mb_substr(get_the_excerpt(), 0, 100).'">';echo "\n";//抜粋を表示
       endwhile;
@@ -11,7 +11,7 @@
   } else {//単一記事ページページ以外の場合（アーカイブページやホームなど）
     echo '<meta property="og:description" content="'; bloginfo('description'); echo '">';echo "\n";//「一般設定」管理画面で指定したブログの説明文を表示
     echo '<meta property="og:title" content="'; bloginfo('name'); echo '">';echo "\n";//「一般設定」管理画面で指定したブログのタイトルを表示
-    echo '<meta property="og:url" content="'; bloginfo('url'); echo '">';echo "\n";//「一般設定」管理画面で指定したブログのURLを表示
+    echo '<meta property="og:url" content="'; echo esc_url( home_url() ); echo '">';echo "\n";//「一般設定」管理画面で指定したブログのURLを表示
   }
   $str = $post->post_content;
   $searchPattern = '/<img.*?src=(["\'])(.+?)\1.*?>/i';//投稿にイメージがあるか調べる
