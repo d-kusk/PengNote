@@ -1,11 +1,13 @@
 @charset "utf-8";
 /*
 Theme Name: PengNote
-Theme URI: 
+Theme URI:
 Description: PengNoteのテーマ
 Version: 0.2
 Author: Daisuke Konishi
 Author URI: peng-note.com
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 */
 
 @import "_base";
@@ -13,12 +15,12 @@ Author URI: peng-note.com
 @import "_module";
 @import "_layout";
 
-/* 
- * Naver v3.1.2 - 2014-11-25 
- * A jQuery plugin for responsive navigation. Part of the Formstone Library. 
- * http://formstone.it/naver/ 
- * 
- * Copyright 2014 Ben Plum; MIT Licensed 
+/*
+ * Naver v3.1.2 - 2014-11-25
+ * A jQuery plugin for responsive navigation. Part of the Formstone Library.
+ * http://formstone.it/naver/
+ *
+ * Copyright 2014 Ben Plum; MIT Licensed
  */
 
 .naver a {
@@ -61,7 +63,7 @@ Author URI: peng-note.com
     border: 2px dotted #ddd;// 適宜調整
     padding: 15px 10px;
   }
-  
+
   img {
     margin: 15px auto;
   }
