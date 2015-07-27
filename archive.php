@@ -12,7 +12,7 @@
               the_post_thumbnail( 'archive' );
           else
             // デフォルトサムネイル
-            echo '<img src="' . get_bloginfo('template_directory') . '/images/thumbnail.png' . '" width="450" height="279" alt="thumbnail" />';
+            echo '<img src="' . esc_url( get_template_directory_uri() ) . '/images/thumbnail.png' . '" width="450" height="279" alt="thumbnail" />';
           ?>
         </a>
         <div class="l-entry-content">
