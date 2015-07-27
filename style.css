@@ -694,6 +694,10 @@ img {
  *
  * Copyright 2014 Ben Plum; MIT Licensed
  */
+.site-description {
+  color: #29abe2;
+}
+
 .naver a {
   background: #29abe2;
   color: #fff;

@@ -29,7 +29,7 @@
         <h1 class="logo">
           <a href="<?php echo esc_url( home_url() ); ?>"><img alt="PengNote" height="55" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo.svg" width="238" /></a>
         </h1>
-        <p><?php bloginfo('description'); ?></p>
+        <p class="site-description"><?php bloginfo('description'); ?></p>
       </div>
       <nav class="l-global-nav">
       <?php
