@@ -1,10 +1,13 @@
 <?php
 // スクリプトの読み込みコードを関数にまとめる
 function pengnote_scripts() {
+  wp_enqueue_style( 'highlight-style', get_template_directory_uri() . '/css/solarized_light.css' );
   // Naverプラグインを読み込むためのスクリプト
   wp_enqueue_script( 'naver-script', get_template_directory_uri() . '/js/jquery.fs.naver.min.js', array( 'jquery' ), '20150813', true );
   // スクリプトの実行やオプション指定なんかに使うスクリプトファイル
   wp_enqueue_script( 'main-script', get_template_directory_uri() . '/js/script.min.js', array( 'jquery' ), '20150813', true );
+  // highlight.jsを読み込むためのスクリプト
+  wp_enqueue_script( 'highlight-script', get_template_directory_uri() . '/js/highlight.pack.js', array(), '20150813', true );
 }
 // pengnote_scripts() をサイト公開側で呼び出す。
 add_action( 'wp_enqueue_scripts', 'pengnote_scripts' );
