@@ -1,4 +1,14 @@
 <?php
+// スクリプトの読み込みコードを関数にまとめる
+function pengnote_scripts() {
+  // Naverプラグインを読み込むためのスクリプト
+  wp_enqueue_script( 'naver-script', get_template_directory_uri() . '/js/jquery.fs.naver.min.js', array( 'jquery' ), '20150813', true );
+  // スクリプトの実行やオプション指定なんかに使うスクリプトファイル
+  wp_enqueue_script( 'main-script', get_template_directory_uri() . '/js/script.min.js', array( 'jquery' ), '20150813', true );
+}
+// pengnote_scripts() をサイト公開側で呼び出す。
+add_action( 'wp_enqueue_scripts', 'pengnote_scripts' );
+
 // カスタムメニューを有効化
 add_theme_support( 'menus' );
 register_nav_menu( 'place_global', 'グローバルナビゲーション' );
@@ -63,7 +73,7 @@ function Custom_adjacent_post_link($maxlen = -1, $format='&laquo; %link', $link=
     return;
 
   $tCnt = mb_strlen( $post->post_title, get_bloginfo('charset') );
-  
+
   if(($maxlen > 0)&&($tCnt > $maxlen)) {
     $title = mb_substr( $post->post_title, 0, $maxlen, get_bloginfo('charset') ) . '…';
   } else {
