@@ -1,5 +1,5 @@
-$(function() {
-  $(".l-global-nav").naver({
+jQuery(function() {
+  jQuery(".l-global-nav").naver({
     labels: {
       closed: " ",
       open: " "
