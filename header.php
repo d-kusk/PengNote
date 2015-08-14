@@ -31,7 +31,7 @@
         </h1>
         <p class="site-description"><?php bloginfo('description'); ?></p>
       </div>
-      <nav class="l-global-nav">
+      <nav class="l-global-nav naver">
       <?php
       // グローバルメニュー
       $args = array(
