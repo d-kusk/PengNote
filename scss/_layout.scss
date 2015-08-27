@@ -7,7 +7,7 @@
   margin-bottom: 20px;
 
   .logo {
-    margin-bottom: 0;
+    margin-bottom: 1em;
     -webkit-margin-after: 0;
   }
   p {margin-top: -10px;}
@@ -116,7 +116,7 @@
     ul {
       @include clearfix;
     }
-    
+
     .previous {
       float: left;
     }
@@ -125,7 +125,7 @@
       float: right;
     }
   }
-  
+
   .l-footer-contents {
     @include center;
     @include clearfix;
