@@ -31,7 +31,7 @@
     <header class="l-global-header">
       <div class="l-logo-area">
         <h1 class="logo">
-          <a href="<?php echo esc_url( home_url() ); ?>"><img alt="PengNote" height="55" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo.svg" width="238" /></a>
+          <a href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo.png" alt="PengNote" width="233" height="57"></a>
         </h1>
         <p class="site-description"><?php bloginfo('description'); ?></p>
       </div>
