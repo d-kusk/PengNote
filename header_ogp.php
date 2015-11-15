@@ -36,5 +36,5 @@
   ?>
   <meta property="og:site_name" content="<?php bloginfo('name'); ?>">
   <meta property="og:locale" content="ja_JP" />
-  <meta property="fb:admins" content="314635445399701">
+  <meta property="fb:app_id" content="314635445399701">
   <!-- /OGP -->

@@ -1,6 +1,10 @@
 <!DOCTYPE html>
-<html <?php language_attributes(); ?> xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja" dir="ltr" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml">
-  <head>
+<html <?php language_attributes(); ?>>
+  <?php if (is_single() || is_page()): ?>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+  <?php else: ?>
+  <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+  <?php endif; ?>
     <meta charset="UTF-8">
     <title><?php if ( !is_home() ) {wp_title( '|', true, 'right' );} elseif (is_404()) {?>ページが見つかりませんでした。 | <?php }bloginfo('name');?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -27,7 +31,7 @@
     <header class="l-global-header">
       <div class="l-logo-area">
         <h1 class="logo">
-          <a href="<?php echo esc_url( home_url() ); ?>"><img alt="PengNote" height="55" src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo.svg" width="238" /></a>
+          <a href="<?php echo esc_url( home_url() ); ?>"><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/logo.png" alt="PengNote" width="233" height="57"></a>
         </h1>
         <p class="site-description"><?php bloginfo('description'); ?></p>
       </div>
