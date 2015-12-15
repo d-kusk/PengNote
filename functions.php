@@ -12,6 +12,22 @@ function pengnote_scripts() {
 // pengnote_scripts() をサイト公開側で呼び出す。
 add_action( 'wp_enqueue_scripts', 'pengnote_scripts' );
 
+// タイトルの表示
+add_theme_support( 'title-tag' );
+
+function page_title( $title ) {
+    // トップページの条件分岐
+    if ( is_front_page() && is_home() ) {
+        $title = get_bloginfo( 'name', 'display' );
+
+    // 個別記事や固定ページの条件分岐
+    } elseif ( is_singular() ) {
+        $title = single_post_title( '', false );
+    }
+    return $title;
+}
+add_filter( 'pre_get_document_title', 'page_title' );
+
 // カスタムメニューを有効化
 add_theme_support( 'menus' );
 register_nav_menu( 'place_global', 'グローバルナビゲーション' );
