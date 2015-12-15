@@ -21,9 +21,6 @@
     <link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/style.css">
     <?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
     <noscript>サイトを快適にお楽しみいただくためにも、JavaScriptを有効にしてください。</noscript>
-    <!--[if lt IE 9]
-    script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"
-    script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"--><!--[endif]-->
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
