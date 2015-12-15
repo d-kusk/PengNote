@@ -6,7 +6,6 @@
   <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
   <?php endif; ?>
     <meta charset="UTF-8">
-    <title><?php if ( !is_home() ) {wp_title( '|', true, 'right' );} elseif (is_404()) {?>ページが見つかりませんでした。 | <?php }bloginfo('name');?></title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="google-site-verification" content="PY-rmkE6_kfIi6H0kQibRDyXqN7PLkNSiTq68oyxAlk" />
     <?php
@@ -22,9 +21,6 @@
     <link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/style.css">
     <?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
     <noscript>サイトを快適にお楽しみいただくためにも、JavaScriptを有効にしてください。</noscript>
-    <!--[if lt IE 9]
-    script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"
-    script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"--><!--[endif]-->
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
