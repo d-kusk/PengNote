@@ -1,6 +1,7 @@
 <?php
 // スクリプトの読み込みコードを関数にまとめる
 function pengnote_scripts() {
+  wp_enqueue_style( 'main-style', get_stylesheet_uri() );
   wp_enqueue_style( 'highlight-style', get_template_directory_uri() . '/css/solarized_light.css' );
   // Naverプラグインを読み込むためのスクリプト
   wp_enqueue_script( 'naver-script', get_template_directory_uri() . '/js/jquery.fs.naver.min.js', array( 'jquery' ), '20150813', true );
