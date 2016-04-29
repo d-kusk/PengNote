@@ -18,7 +18,6 @@
     <meta name="keywords" content="">
     <meta name="description" content="<?php bloginfo('description'); ?>">
     <?php get_template_part('header_ogp'); ?>
-    <link rel="stylesheet" href="<?php echo esc_url( get_stylesheet_directory_uri() ); ?>/style.css">
     <?php if ( is_singular() ) wp_enqueue_script( "comment-reply" ); ?>
     <noscript>サイトを快適にお楽しみいただくためにも、JavaScriptを有効にしてください。</noscript>
     <?php wp_head(); ?>
