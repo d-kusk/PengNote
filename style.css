@@ -829,7 +829,7 @@ img {
   margin: 15px auto;
 }
 .entry-body a[target="_blank"] {
-  padding-right: 1em;
+  padding-right: .2em;
 }
 .entry-body a[target="_blank"]:after {
   content: '\f08e';
