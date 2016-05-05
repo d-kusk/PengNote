@@ -451,7 +451,7 @@ img {
 }
 
 .entry-header {
-  margin: 20px auto;
+  margin: 40px auto;
 }
 
 .entry-data-lists .tag a,
@@ -483,7 +483,7 @@ img {
 .entry-title {
   -webkit-margin-before: 0;
   -webkit-margin-after: 0;
-  margin: 0;
+  margin: 10px 0;
   line-height: 1.6em;
 }
 
