@@ -813,12 +813,12 @@ img {
 .entry-body > h2 {
   border-bottom: 2px solid #29abe2;
   padding: .2em 0;
-  margin-top: 40px;
+  margin-top: 60px;
 }
 .entry-body > h3 {
   border-left: 4px solid #29abe2;
   padding-left: .6em;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 .entry-body blockquote {
   background: url(images/bq.png) no-repeat 5px 5px;
