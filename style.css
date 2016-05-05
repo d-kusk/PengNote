@@ -838,6 +838,11 @@ img {
   color: #29abe2;
   font-size: 1em;
 }
+.entry-body .ref {
+  background-color: #f0f0f0;
+  padding: .8em;
+  border-radius: 3px;
+}
 
 .copy {
   margin: 0;
