@@ -828,6 +828,16 @@ img {
 .entry-body img {
   margin: 15px auto;
 }
+.entry-body a[target="_blank"] {
+  padding-right: 1em;
+}
+.entry-body a[target="_blank"]:after {
+  content: '\f08e';
+  padding-left: .5em;
+  font-family: FontAwesome;
+  color: #29abe2;
+  font-size: 1em;
+}
 
 .copy {
   margin: 0;
