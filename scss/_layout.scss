@@ -82,6 +82,10 @@
 
   ul {
     @include reset-list;
+
+    li {
+      margin-bottom: .5em;
+    }
   }
 }
 
