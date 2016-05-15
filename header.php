@@ -45,14 +45,14 @@
     <?php if(is_single()): ?>
     <ul class="l-breadcrumbs">
       <li><a href="<?php echo esc_url( home_url() ); ?>">HOME</a>&gt;</li>
-      <li><a href="<?php $cat = get_the_category(); $cat = $cat[0]; echo get_category_link( $cat->term_id ); ?>"><?php echo $cat->cat_name; ?></a>&gt;</li>
+      <li><a href="<?php $cat = get_the_category(); $cat = $cat[0]; echo esc_url( get_category_link( $cat->term_id ) ); ?>"><?php echo $cat->cat_name; ?></a>&gt;</li>
       <li class="current"><?php the_title(''); ?></li>
     </ul>
     <?php elseif(is_page()): ?>
     <ul class="l-breadcrumbs">
       <li><a href="<?php echo esc_url( home_url() ); ?>">HOME</a>&gt;</li>
       <?php foreach ( array_reverse(get_post_ancestors($post->ID)) as $parid ) { ?>
-      <li><a href="<?php echo get_page_link( $parid );?>" title="<?php echo get_page($parid)->post_name; ?>">
+      <li><a href="<?php echo esc_url( get_page_link( $parid ) );?>" title="<?php echo get_page($parid)->post_name; ?>">
       <?php echo get_page($parid)->post_name; ?></a>&gt;</li>
       <?php } ?>
       <li class="current"><?php the_title(''); ?></li>
