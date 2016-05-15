@@ -86,6 +86,7 @@ img {
 .page-numbers {
   color: $themeCo;
   border: 1px solid $themeCo;
+  box-sizing: border-box;
   border-radius: 3px;
   padding: 5px;
   margin: 0 6px;
@@ -96,7 +97,8 @@ img {
     color: #fff;
   }
 
-  .current {
+  &.current {
+    border: 1px solid $themeCo;
     background-color: $themeCo;
     color: #fff;
   }
