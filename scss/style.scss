@@ -3,7 +3,7 @@
 Theme Name: PengNote
 Theme URI:
 Description: PengNoteのテーマ
-Version: 0.8.0
+Version: 1.0.0
 Author: Daisuke Konishi
 Author URI: peng-note.com
 License: GNU General Public License v2 or later
@@ -37,6 +37,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
   margin: 0 1px 0 0;
   padding: 0 15px;
   @include transition(all 0.6s ease);
+  text-decoration: none;
 
   &:hover { background: lighten($themeCo, 20%); }
 }
