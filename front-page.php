@@ -6,7 +6,7 @@
           the_post();
       ?>
       <article class="l-entry-area post-<?php the_ID(); ?> <?php post_class(); ?>">
-        <a class="l-eyecatch-area" href="<?php the_permalink(); ?>">
+        <a class="l-eyecatch-area" href="<?php esc_url( the_permalink() ); ?>">
           <?php if (has_post_thumbnail())
               the_post_thumbnail( 'archive' );
           else
@@ -24,7 +24,7 @@
             </li>
           </ul>
           <h2 class="entry-title">
-            <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+            <a href="<?php esc_url( the_permalink() ); ?>"><?php the_title(); ?></a>
           </h2>
         </div>
       </article>
