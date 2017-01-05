@@ -6,14 +6,6 @@
           the_post();
       ?>
       <article class="l-entry-area post-<?php the_ID(); ?> <?php post_class(); ?>">
-        <a class="l-eyecatch-area" href="<?php esc_url( the_permalink() ); ?>">
-          <?php if (has_post_thumbnail())
-              the_post_thumbnail( 'archive' );
-          else
-            // デフォルトサムネイル
-            echo '<img src="' . get_template_directory_uri() . '/images/thumbnail.png' . '" width="450" height="279" alt="thumbnail" />';
-          ?>
-        </a>
         <div class="l-entry-content">
           <ul class="entry-data-lists">
             <li class="postedtime">

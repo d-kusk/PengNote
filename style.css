@@ -662,9 +662,7 @@ img {
   }
 
   .l-entry-content {
-    width: 57%;
-    padding-left: 3%;
-    float: left;
+    width: 100%;
   }
 }
 .l-archives-pager {
