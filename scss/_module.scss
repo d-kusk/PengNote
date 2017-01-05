@@ -44,19 +44,19 @@ img {
 .tagcloud {
   a {
     border-radius: 7px;
-    border: 1px solid $themeCo;
-    background: $themeCo;
+    border: 1px solid #fff;
+    background: #fff;
     padding: 4px 9px;
     white-space: nowrap;// 途中で改行されるのを防止
     @include transition(all 0.6s ease);
     line-height: 2.5;
     text-decoration: none;
-    color: #fff;
+    color: $themeCo;
     font-size: .9em;
 
     &:hover {
-      background-color: #fff;
-      color: $themeCo;
+      background-color: $themeCo;
+      color: #fff;
     }
   }
 }
