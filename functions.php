@@ -43,11 +43,19 @@ add_image_size( 'large', 660, 460, false );
 // ウィジェットの有効化
 function footer_widgets_init() {
   register_sidebar(array(
-   'name' => 'フッターウィジェット',
-   'description' => 'フッターに置くウィジェット',
-   'id' => 'footer-widget',
-   'before_widget' => '<aside class="l-footer-widget">',
-   'after_widget' => '</aside>',
+   'name' => 'フッターウィジェット左',
+   'description' => 'フッターのウィジェット左',
+   'id' => 'footer-widget-left',
+   'before_widget' => '<div class="widget-item">',
+   'after_widget' => '</div>',
+  ));
+  
+  register_sidebar(array(
+   'name' => 'フッターウィジェット右',
+   'description' => 'フッターのウィジェット右',
+   'id' => 'footer-widget-right',
+   'before_widget' => '<div class="widget-item">',
+   'after_widget' => '</div>',
   ));
 }
 add_action( 'widgets_init', 'footer_widgets_init' );

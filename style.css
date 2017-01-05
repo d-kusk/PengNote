@@ -645,6 +645,18 @@ img {
   margin-bottom: .5em;
 }
 
+.widget {
+  width: 49%;
+}
+
+.widget.isLeft{
+  float: left;
+}
+
+.widget.isRight {
+  float: right;
+}
+
 .author-content {
   overflow: hidden;
   *zoom: 1;
