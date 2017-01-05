@@ -40,7 +40,6 @@
           <?php the_content(); ?>
           <?php
           get_template_part('adsense');
-          related_posts();
           ?>
         </div>
       </article>
