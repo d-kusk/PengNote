@@ -2,7 +2,7 @@
 // スクリプトの読み込みコードを関数にまとめる
 function pengnote_scripts() {
   wp_enqueue_style( 'main-style', get_stylesheet_uri() );
-  wp_enqueue_style( 'highlight-style', get_template_directory_uri() . '/css/atelier-forest-light.css' );
+  wp_enqueue_style( 'highlight-style', get_template_directory_uri() . '/css/github-gist.css' );
   wp_enqueue_style( 'icon-font', 'https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css' );
 
   // Naverプラグインを読み込むためのスクリプト

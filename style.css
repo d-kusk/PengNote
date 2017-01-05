@@ -843,6 +843,13 @@ img {
   line-height: 1.6;
 }
 
+.entry-body pre {
+  background: #ededed;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+
 .entry-body blockquote {
   background: url(images/bq.png) no-repeat 5px 5px;
   border: 2px dotted #ddd;

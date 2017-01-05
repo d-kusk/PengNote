@@ -67,6 +67,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
     margin-top: 1.6em;
     line-height: 1.6;
   }
+  
+  pre {
+    width: 100%;
+    background: #ededed;
+    box-sizing: border-box;
+    padding: 20px;
+  }
 
   blockquote {
     background: url(images/bq.png) no-repeat 5px 5px;// ファイルの指定などは後日
