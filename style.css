@@ -825,6 +825,12 @@ img {
   padding-left: .6em;
   margin-top: 40px;
 }
+
+.entry-body p {
+  margin-top: 1.6em;
+  line-height: 1.6;
+}
+
 .entry-body blockquote {
   background: url(images/bq.png) no-repeat 5px 5px;
   border: 2px dotted #ddd;
