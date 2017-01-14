@@ -30,6 +30,7 @@
         </h1>
         <p class="site-description"><?php bloginfo('description'); ?></p>
       </div>
+      <?php get_search_form(); ?>
       <nav class="l-global-nav naver">
       <?php
       // グローバルメニュー

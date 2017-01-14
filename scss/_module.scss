@@ -125,13 +125,51 @@ img {
   }
 }
 
+.search-area {
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 660px) {
+  .search-area {
+    width: 640px;
+    margin: 0 auto;
+  }
+}
+
+.search-area form {
+  width: 66%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 660px) {
+  .search-area form {
+    width: 42%;
+    margin: 0 auto 20px;
+  }
+}
+
+.search-input {
+  width: 74%;
+  padding: 4px;
+  border-radius: 7px;
+  border: 1px solid #dedede;
+  font-size: 16px;
+}
+
+.btn-submit {
+  margin-top: -1px;
+  padding: 0px 9px;
+  border-radius: 6px !important;
+}
+
 .widget {
   width: 49%;
-  
+
   &.isLeft {
     float: left;
   }
-  
+
   &.isRight {
     float: right;
   }

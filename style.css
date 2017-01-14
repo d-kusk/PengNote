@@ -246,6 +246,12 @@ textarea {
   /* 3 */
 }
 
+input[type="submit"] {
+   appearance: none;
+   -webkit-appearance: none;
+   border-radius: 0;
+}
+
 /**
  * Address `overflow` set to `hidden` in IE 8/9/10/11.
  */
@@ -455,7 +461,8 @@ img {
 }
 
 .entry-data-lists .tag a,
-.tagcloud a {
+.tagcloud a,
+.btn-submit {
   border-radius: 7px;
   border: 1px solid #29abe2;
   background: #fff;
@@ -471,7 +478,8 @@ img {
   font-size: .9em;
 }
 .entry-data-lists .tag a:hover,
-.tagcloud a:hover {
+.tagcloud a:hover,
+.btn-submit:hover {
   background-color: #29abe2;
   color: #fff;
 }
@@ -880,6 +888,44 @@ img {
   padding: .8em 1em;
   background: #29abe2;
   color: #fff;
+}
+
+.search-area {
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 660px) {
+  .search-area {
+    width: 640px;
+    margin: 0 auto 20px;
+  }
+}
+
+.search-area form {
+  width: 66%;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 660px) {
+  .search-area form {
+    width: 42%;
+    margin: 0 auto;
+  }
+}
+
+.search-input {
+  width: 74%;
+  padding: 4px;
+  border-radius: 6px;
+  border: 1px solid #dedede;
+  font-size: 16px;
+}
+
+.btn-submit {
+  margin-top: -1px;
+  padding: 0px 9px;
+  border-radius: 6px !important;
 }
 
 /*# sourceMappingURL=style.css.map */

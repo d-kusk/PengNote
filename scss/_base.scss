@@ -3,6 +3,12 @@
 // Normalize.scss
 @import "_normalize";
 
+input[type="submit"] {
+   appearance: none;
+   -webkit-appearance: none;
+   border-radius: 0;
+}
+
 // #################
 // BaseになるCSS
 // #################
